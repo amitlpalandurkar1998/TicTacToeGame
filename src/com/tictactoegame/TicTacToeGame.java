@@ -1,29 +1,36 @@
 package com.tictactoegame;
 public class TicTacToeGame {
-
-        char [] tictac = new char[10];
+    static char [] tictac = new char[10];
     public void board(){
-        tictac[1] = ' ';
-        tictac[2] = ' ';
-        tictac[3] = ' ';
-        tictac[4] = ' ';
-        tictac[5] = ' ';
-        tictac[6] = ' ';
-        tictac[7] = ' ';
-        tictac[8] = ' ';
-        tictac[9] = ' ';
-        tictac[10] = ' ';
+        tictac[1] = '_';
+        tictac[2] = '_';
+        tictac[3] = '_';
+        tictac[4] = '_';
+        tictac[5] = '_';
+        tictac[6] = '_';
+        tictac[7] = '_';
+        tictac[8] = '_';
+        tictac[9] = '_';
 
     }
     public void showBoard(){
+        board();
         for (int i=1; i< tictac.length; i++){
             if (i==4){
                 System.out.println();
             } else if (i==7) {
                 System.out.println();
             }
-            System.out.print(tictac[i]);
+            System.out.print(tictac[i]+"  ");
+        }
+
+    }
+    public void check(int playerPosition){
+        char temp = tictac[playerPosition];
+        if (temp=='_'){
+            System.out.println("Index is free. ");
+        }else {
+            System.out.println("Index is not free .");
         }
     }
-
 }
