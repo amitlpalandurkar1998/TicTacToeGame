@@ -28,5 +28,7 @@ public class Main {
 
         System.out.println("\nThe Player Letter is : "+ playerLetter);
         System.out.println("\nThe Computer Letter is : "+computerLetter);
+
+        ticTacToeGame.showBoard();
     }
 }

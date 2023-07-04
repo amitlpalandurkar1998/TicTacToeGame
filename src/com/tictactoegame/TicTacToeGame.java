@@ -1,8 +1,8 @@
 package com.tictactoegame;
 public class TicTacToeGame {
 
-    public void board(){
         char [] tictac = new char[10];
+    public void board(){
         tictac[1] = ' ';
         tictac[2] = ' ';
         tictac[3] = ' ';
@@ -15,6 +15,15 @@ public class TicTacToeGame {
         tictac[10] = ' ';
 
     }
-
+    public void showBoard(){
+        for (int i=1; i< tictac.length; i++){
+            if (i==4){
+                System.out.println();
+            } else if (i==7) {
+                System.out.println();
+            }
+            System.out.print(tictac[i]);
+        }
+    }
 
 }
