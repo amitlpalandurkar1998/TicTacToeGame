@@ -13,9 +13,19 @@ package com.tictactoegame;
 //UC 1 user friendly
 public class TicTacToeGame {
 
-    public void tictacBoard(){
+    public void board(){
         char [] tictac = new char[10];
-        tictac[0] = ' ';
+        tictac[1] = ' ';
+        tictac[2] = ' ';
+        tictac[3] = ' ';
+        tictac[4] = ' ';
+        tictac[5] = ' ';
+        tictac[6] = ' ';
+        tictac[7] = ' ';
+        tictac[8] = ' ';
+        tictac[9] = ' ';
+        tictac[10] = ' ';
+        
     }
 
 
