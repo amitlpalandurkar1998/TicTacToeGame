@@ -2,15 +2,15 @@ package com.tictactoegame;
 public class TicTacToeGame {
     static char [] tictac = new char[10];
     public void board(){
-        tictac[1] = '_';
-        tictac[2] = '_';
-        tictac[3] = '_';
-        tictac[4] = '_';
-        tictac[5] = '_';
-        tictac[6] = '_';
-        tictac[7] = '_';
-        tictac[8] = '_';
-        tictac[9] = '_';
+        tictac[1] = '1';
+        tictac[2] = '1';
+        tictac[3] = '1';
+        tictac[4] = '1';
+        tictac[5] = '1';
+        tictac[6] = '1';
+        tictac[7] = '1';
+        tictac[8] = '1';
+        tictac[9] = '1';
 
     }
     public void showBoard(){
@@ -32,5 +32,16 @@ public class TicTacToeGame {
         }else {
             System.out.println("Index is not free .");
         }
+    }
+    public boolean firstCheckAnyfreeSpace(){
+        boolean checkFreeSpace = true;
+        for (int i=1; i<=9; i++){
+            if (tictac[i]=='_'){
+                checkFreeSpace=true;
+            }else {
+                checkFreeSpace=false;
+            }
+        }
+        return checkFreeSpace;
     }
 }

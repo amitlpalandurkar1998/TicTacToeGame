@@ -44,6 +44,7 @@ public class Main {
             System.out.print("player Selete the Index Number (between 1 to 9): ");
             int playerPosition = scanner.nextInt();
             ticTacToeGame.check(playerPosition);
+            isRunning= ticTacToeGame.firstCheckAnyfreeSpace();
         }
     }
 }
