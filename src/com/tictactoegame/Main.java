@@ -1,12 +1,33 @@
 package com.tictactoegame;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Random random = new Random();
         TicTacToeGame ticTacToeGame = new TicTacToeGame();
         Scanner scanner = new Scanner(System.in);
         boolean isRunning = true;
+        boolean playerChance = true;
+        boolean computerChance = true;
+
+        System.out.println("Welcome to Tic Tac Toe Game.");
+        System.out.println("Enter '0' For Head : ");
+        System.out.println("Enter '1' For Tail : ");
+        int tos = scanner.nextInt();
+        int tosACoin = random.nextInt(2);
+        if (tos==tosACoin){
+            System.out.println("You win the toas.");
+            System.out.println("You play First.");
+            playerChance = true;
+            computerChance = false;
+        }else {
+            System.out.println("You Lose the Toas.");
+            System.out.println("Computer played first");
+            playerChance = false;
+            computerChance = true;
+        }
 
         System.out.println("Welcome to Tic Tac Toe Game.");
         System.out.println("Enter '1' To Get 'X' : ");
